@@ -8,4 +8,3 @@ public class ForecastCalculator {
 
         return predictFutureValue(currentValue * (1 + growthRate), growthRate, years - 1);
     }
-}
