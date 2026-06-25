@@ -1,0 +1,2 @@
+DROP FUNCTION GetAnnualSalary;
+GO

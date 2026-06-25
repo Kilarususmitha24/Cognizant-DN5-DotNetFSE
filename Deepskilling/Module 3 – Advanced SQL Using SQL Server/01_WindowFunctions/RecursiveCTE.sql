@@ -1,0 +1,13 @@
+WITH Numbers AS
+(
+    SELECT 1 AS Num
+
+    UNION ALL
+
+    SELECT Num + 1
+    FROM Numbers
+    WHERE Num < 10
+)
+
+SELECT *
+FROM Numbers;
