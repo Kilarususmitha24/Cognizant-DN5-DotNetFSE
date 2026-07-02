@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - Color & Background</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Community Event Portal</h1>
+    </header>
+
+    <section class="banner">
+        <h2>Welcome to Local Community Events</h2>
+        <p>
+            Join exciting cultural, sports, and educational events happening around your city.
+        </p>
+    </section>
+
+    <section class="card">
+        <h3>Upcoming Event</h3>
+        <p>
+            Community Sports Meet - Sunday, 10:00 AM
+        </p>
+    </section>
+
+</body>
+</html>
