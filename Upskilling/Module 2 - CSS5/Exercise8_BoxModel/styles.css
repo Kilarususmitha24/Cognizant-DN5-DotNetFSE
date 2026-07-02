@@ -1,0 +1,88 @@
+
+
+body{
+
+    font-family:Arial, sans-serif;
+
+    background:#f4f4f4;
+
+    margin:0;
+}
+
+
+header{
+
+    background:#1565C0;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+
+.eventCard{
+
+    width:400px;
+
+    background:white;
+
+    margin:40px auto;
+
+    padding:25px;
+
+    border:3px solid #1565C0;
+
+    border-radius:10px;
+
+    box-shadow:0 0 10px gray;
+}
+
+.eventCard h2{
+
+    color:#1565C0;
+}
+
+
+.inputBox{
+
+    display:block;
+
+    margin:20px auto;
+
+    padding:10px;
+
+    border:2px solid #1565C0;
+
+    outline:3px solid orange;
+
+    width:300px;
+}
+
+
+.hiddenBox{
+
+    width:300px;
+
+    margin:20px auto;
+
+    padding:15px;
+
+    background:#FFD54F;
+
+    visibility:hidden;
+}
+
+.noneBox{
+
+    width:300px;
+
+    margin:20px auto;
+
+    padding:15px;
+
+    background:#EF5350;
+
+    display:none;
+}
