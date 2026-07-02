@@ -1,0 +1,57 @@
+
+
+body{
+
+    font-family:Arial, sans-serif;
+
+    background:#f4f4f4;
+
+    margin:0;
+}
+
+
+header{
+
+    background:#1565C0;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+h2{
+
+    text-align:center;
+
+    color:#1565C0;
+
+    margin-top:30px;
+}
+
+
+.news{
+
+    width:80%;
+
+    margin:30px auto;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 0 10px gray;
+
+    column-count:2;
+
+    column-gap:40px;
+
+    column-rule:2px solid gray;
+
+    text-align:justify;
+
+    line-height:1.8;
+}
