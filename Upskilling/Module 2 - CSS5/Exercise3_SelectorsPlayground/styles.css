@@ -1,0 +1,48 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    padding:30px;
+}
+
+h1{
+    color:#003366;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:18px;
+    margin:10px 0;
+    color:#333;
+}
+
+.highlight{
+    color:white;
+    background:#2196F3;
+    padding:10px;
+    border-radius:5px;
+}
+
+#special{
+    color:red;
+    font-weight:bold;
+}
+
+.card{
+    background:white;
+    border:2px solid #2196F3;
+    padding:20px;
+    margin-top:20px;
+    border-radius:10px;
+}
+
+h1,p{
+    font-family:Verdana,sans-serif;
+}
