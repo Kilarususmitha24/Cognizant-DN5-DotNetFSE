@@ -1,0 +1,30 @@
+
+body{
+    background-color:#f0f8ff;
+    font-family:Verdana, sans-serif;
+    margin:40px;
+}
+
+h1{
+    color:#003366;
+    text-align:center;
+}
+
+h2{
+    color:#006699;
+}
+
+p{
+    font-size:18px;
+    color:#444;
+    line-height:1.6;
+}
+
+.box{
+    margin-top:20px;
+    padding:20px;
+    background:#ffffff;
+    border:2px solid #006699;
+    border-radius:10px;
+    width:350px;
+}
