@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9 - Event Handling</title>
+</head>
+
+<body>
+
+<h1 id="heading">Community Event Portal</h1>
+
+<button onclick="clickEvent()">
+Click Me
+</button>
+
+<br><br>
+
+<button ondblclick="doubleClickEvent()">
+Double Click Me
+</button>
+
+<br><br>
+
+<div id="box"
+style="width:300px;height:120px;background:lightgray;text-align:center;line-height:120px;">
+Move Mouse Here
+</div>
+
+<br>
+
+<label>Select Event</label>
+
+<select id="events" onchange="changeEvent()">
+
+<option>Select</option>
+
+<option>Sports Meet</option>
+
+<option>Music Festival</option>
+
+<option>Food Carnival</option>
+
+</select>
+
+<br><br>
+
+<input
+type="text"
+id="name"
+placeholder="Type Your Name"
+>
+
+<h3 id="output"></h3>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
