@@ -1,0 +1,135 @@
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f8f9fa;
+    color:#333;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+}
+
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-link{
+    font-size:18px;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ffc107 !important;
+}
+
+
+.hero{
+    padding:80px 0;
+    background:linear-gradient(135deg,#0d6efd,#6ea8fe);
+    color:white;
+}
+
+.hero h1{
+    font-size:52px;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:20px;
+    margin:20px 0;
+}
+
+
+.btn{
+    border-radius:30px;
+    padding:10px 25px;
+}
+
+
+.card{
+    border:none;
+    transition:.3s;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.card-title{
+    font-weight:bold;
+}
+
+
+section{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+section h2{
+    font-weight:bold;
+}
+
+
+.form-control{
+    border-radius:10px;
+}
+
+textarea{
+    resize:none;
+}
+
+button{
+    margin-right:10px;
+}
+
+
+.card i{
+    font-size:22px;
+}
+
+
+footer{
+    margin-top:50px;
+}
+
+footer p{
+    margin:0;
+}
+
+
+.btn-outline-primary,
+.btn-outline-danger,
+.btn-outline-info,
+.btn-outline-dark{
+
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    padding-top:10px;
+}
+
+
+.rounded{
+    border-radius:15px !important;
+}
+
+
+.shadow{
+    box-shadow:0 10px 25px rgba(0,0,0,.15)!important;
+}
