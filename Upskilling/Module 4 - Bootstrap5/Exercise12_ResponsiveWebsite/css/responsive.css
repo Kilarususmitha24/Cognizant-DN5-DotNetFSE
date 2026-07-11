@@ -1,0 +1,201 @@
+
+
+@media (max-width:1200px){
+
+.hero h1{
+    font-size:44px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+
+
+@media (max-width:992px){
+
+.hero{
+    text-align:center;
+    padding:60px 0;
+}
+
+.hero img{
+    margin-top:30px;
+}
+
+.navbar-nav{
+    text-align:center;
+}
+
+.card{
+    margin-bottom:25px;
+}
+
+section{
+    padding:40px 0;
+}
+
+}
+
+
+@media (max-width:768px){
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.display-1{
+    font-size:4rem;
+}
+
+.display-2{
+    font-size:3.5rem;
+}
+
+.display-3{
+    font-size:3rem;
+}
+
+.display-4{
+    font-size:2.5rem;
+}
+
+.btn{
+    width:100%;
+    margin-bottom:10px;
+}
+
+.card img{
+    height:200px;
+}
+
+footer{
+    text-align:center;
+}
+
+}
+
+
+@media (max-width:576px){
+
+.hero{
+    padding:40px 0;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.navbar-brand{
+    font-size:22px;
+}
+
+.nav-link{
+    font-size:16px;
+}
+
+.card{
+    margin-bottom:20px;
+}
+
+.card img{
+    height:180px;
+}
+
+.container{
+    padding-left:15px;
+    padding-right:15px;
+}
+
+h1{
+    font-size:30px;
+}
+
+h2{
+    font-size:26px;
+}
+
+h3{
+    font-size:22px;
+}
+
+p{
+    font-size:15px;
+}
+
+.form-control{
+    font-size:15px;
+}
+
+textarea{
+    min-height:120px;
+}
+
+.btn{
+    font-size:15px;
+}
+
+iframe{
+    height:250px;
+}
+
+footer{
+    font-size:14px;
+}
+
+}
+
+
+@media (max-width:400px){
+
+.hero h1{
+    font-size:26px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+.navbar-brand{
+    font-size:20px;
+}
+
+.btn{
+    padding:10px;
+    font-size:14px;
+}
+
+.card-title{
+    font-size:18px;
+}
+
+.card-text{
+    font-size:14px;
+}
+
+.display-1{
+    font-size:3rem;
+}
+
+.display-2{
+    font-size:2.8rem;
+}
+
+.display-3{
+    font-size:2.5rem;
+}
+
+.display-4{
+    font-size:2.2rem;
+}
+
+}
