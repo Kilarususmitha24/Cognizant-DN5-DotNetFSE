@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Community Event Portal</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    margin:30px;
+}
+
+.container{
+    width:600px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+h1{
+    text-align:center;
+    color:#0d6efd;
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    padding:10px 20px;
+    margin:5px;
+    cursor:pointer;
+}
+
+#success{
+    display:none;
+    margin-top:20px;
+    padding:10px;
+    background:#d4edda;
+    color:green;
+    border-radius:5px;
+}
+
+#eventCard{
+    display:none;
+    margin-top:20px;
+    padding:20px;
+    background:#e9ecef;
+    border-radius:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Community Event Portal</h1>
+
+<input
+type="text"
+id="name"
+placeholder="Enter Name">
+
+<select id="event">
+
+<option value="">Select Event</option>
+
+<option>Sports Meet</option>
+
+<option>Music Festival</option>
+
+<option>Food Carnival</option>
+
+<option>Book Exhibition</option>
+
+</select>
+
+<button id="register">
+
+Register
+
+</button>
+
+<button id="clear">
+
+Clear
+
+</button>
+
+<div id="success">
+
+Registration Successful!
+
+</div>
+
+<div id="eventCard">
+
+<h2>Registration Details</h2>
+
+<p><b>Name :</b> <span id="displayName"></span></p>
+
+<p><b>Event :</b> <span id="displayEvent"></span></p>
+
+</div>
+
+</div>
+
+<script>
+
+$(document).ready(function(){
+
+$("#register").click(function(){
+
+let name=$("#name").val();
+
+let event=$("#event").val();
+
+if(name==""){
+
+alert("Please Enter Name");
+
+return;
+
+}
+
+if(event==""){
+
+alert("Please Select Event");
+
+return;
+
+}
+
+$("#displayName").text(name);
+
+$("#displayEvent").text(event);
+
+$("#success").fadeIn(1000);
+
+$("#eventCard").slideDown(1000);
+
+});
+
+$("#clear").click(function(){
+
+$("#name").val("");
+
+$("#event").val("");
+
+$("#success").fadeOut();
+
+$("#eventCard").slideUp();
+
+});
+
+$("#eventCard").hover(function(){
+
+$(this).css("background","#d1ecf1");
+
+},function(){
+
+$(this).css("background","#e9ecef");
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
