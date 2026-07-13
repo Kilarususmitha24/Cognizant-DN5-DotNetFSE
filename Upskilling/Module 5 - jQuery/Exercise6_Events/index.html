@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Exercise 6 - Events</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+
+body{
+    font-family:Arial;
+    margin:30px;
+}
+
+#box{
+    width:300px;
+    height:120px;
+    background:lightgray;
+    text-align:center;
+    line-height:120px;
+    margin-top:20px;
+}
+
+button{
+    margin:5px;
+    padding:10px 18px;
+}
+
+input{
+    padding:8px;
+    width:250px;
+}
+
+#result{
+    margin-top:20px;
+    font-weight:bold;
+    color:blue;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Community Event Portal</h1>
+
+<button id="clickBtn">Click</button>
+
+<button id="dblBtn">Double Click</button>
+
+<br><br>
+
+<div id="box">
+
+Move Mouse Here
+
+</div>
+
+<br>
+
+<input
+type="text"
+id="name"
+placeholder="Enter Your Name">
+
+<h3 id="result"></h3>
+
+<script>
+
+$(document).ready(function(){
+
+
+    $("#clickBtn").click(function(){
+
+        $("#result").text("Button Clicked");
+
+    });
+
+
+    $("#dblBtn").dblclick(function(){
+
+        $("#result").text("Button Double Clicked");
+
+    });
+
+
+    $("#box").mouseenter(function(){
+
+        $(this).css("background","lightgreen");
+
+        $(this).text("Mouse Enter");
+
+    });
+
+
+    $("#box").mouseleave(function(){
+
+        $(this).css("background","lightgray");
+
+        $(this).text("Move Mouse Here");
+
+    });
+
+
+    $("#box").hover(function(){
+
+        $("#result").text("Hovering");
+
+    });
+
+
+    $("#name").focus(function(){
+
+        $("#result").text("Textbox Focused");
+
+    });
+
+
+    $("#name").blur(function(){
+
+        $("#result").text("Textbox Lost Focus");
+
+    });
+
+
+    $("#name").keydown(function(){
+
+        $("#result").text("Key Down");
+
+    });
+
+
+    $("#name").keyup(function(){
+
+        $("#result").text("Typing : " + $(this).val());
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
