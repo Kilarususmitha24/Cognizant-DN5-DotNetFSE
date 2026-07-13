@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Exercise 7 - Event Helpers</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+
+body{
+
+    font-family:Arial;
+
+    margin:30px;
+
+    height:1500px;
+
+}
+
+form{
+
+    margin-top:20px;
+
+}
+
+input,select{
+
+    padding:8px;
+
+    width:250px;
+
+    margin-bottom:10px;
+
+}
+
+button{
+
+    padding:10px 18px;
+
+}
+
+#message{
+
+    margin-top:20px;
+
+    color:blue;
+
+    font-weight:bold;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Community Event Portal</h1>
+
+<form id="registrationForm">
+
+<input
+type="text"
+id="name"
+placeholder="Enter Name">
+
+<br>
+
+<select id="event">
+
+<option>Select Event</option>
+
+<option>Music Festival</option>
+
+<option>Sports Meet</option>
+
+<option>Food Carnival</option>
+
+</select>
+
+<br>
+
+<button type="submit">
+
+Register
+
+</button>
+
+</form>
+
+<h3 id="message"></h3>
+
+<script>
+
+$(document).ready(function(){
+
+    $("#message").text("Page Loaded Successfully");
+
+    $("#event").change(function(){
+
+        $("#message").text(
+
+        "Selected : " + $(this).val()
+
+        );
+
+    });
+
+    $("#registrationForm").submit(function(e){
+
+        e.preventDefault();
+
+        $("#message").text(
+
+        "Registration Submitted Successfully"
+
+        );
+
+    });
+
+    $(window).resize(function(){
+
+        console.log("Window Resized");
+
+    });
+
+    $(window).scroll(function(){
+
+        console.log("Scrolling...");
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
