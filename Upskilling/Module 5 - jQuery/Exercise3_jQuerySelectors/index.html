@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Exercise 3 - jQuery Selectors</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+<h1 id="title">
+Community Event Portal
+</h1>
+
+<p class="info">
+Music Festival
+</p>
+
+<p class="info">
+Sports Meet
+</p>
+
+<p class="info">
+Food Carnival
+</p>
+
+<button id="elementBtn">
+Element Selector
+</button>
+
+<button id="idBtn">
+ID Selector
+</button>
+
+<button id="classBtn">
+Class Selector
+</button>
+
+<button id="multipleBtn">
+Multiple Selector
+</button>
+
+<script>
+
+$(document).ready(function(){
+
+    $("#elementBtn").click(function(){
+
+        $("p").css("color","blue");
+
+    });
+
+    $("#idBtn").click(function(){
+
+        $("#title").css("color","red");
+
+    });
+
+    $("#classBtn").click(function(){
+
+        $(".info").css("font-size","24px");
+
+    });
+
+    $("#multipleBtn").click(function(){
+
+        $("h1,p").css("background","yellow");
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
