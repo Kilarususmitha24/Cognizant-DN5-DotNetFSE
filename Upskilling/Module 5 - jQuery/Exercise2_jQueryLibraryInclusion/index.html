@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Exercise 2 - jQuery Library Inclusion</title>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>Community Event Portal</h1>
+
+<p id="info">
+
+Welcome to the Community Event Portal.
+Click the buttons below to test jQuery.
+
+</p>
+
+<button id="hideBtn">
+
+Hide
+
+</button>
+
+<button id="showBtn">
+
+Show
+
+</button>
+
+<button id="toggleBtn">
+
+Toggle
+
+</button>
+
+<script>
+
+$(document).ready(function(){
+
+    $("#hideBtn").click(function(){
+
+        $("#info").hide();
+
+    });
+
+    $("#showBtn").click(function(){
+
+        $("#info").show();
+
+    });
+
+    $("#toggleBtn").click(function(){
+
+        $("#info").toggle();
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
