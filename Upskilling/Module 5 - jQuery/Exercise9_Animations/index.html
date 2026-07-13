@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Exercise 9 - Animations</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+
+body{
+
+    font-family:Arial;
+
+    margin:30px;
+
+}
+
+#box{
+
+    width:150px;
+
+    height:150px;
+
+    background:steelblue;
+
+    color:white;
+
+    text-align:center;
+
+    line-height:150px;
+
+    position:relative;
+
+    font-size:20px;
+
+}
+
+button{
+
+    margin-top:20px;
+
+    padding:10px 20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Community Event Portal</h1>
+
+<div id="box">
+
+Event
+
+</div>
+
+<br>
+
+<button id="animateBtn">
+
+Start Animation
+
+</button>
+
+<button id="resetBtn">
+
+Reset
+
+</button>
+
+<script>
+
+$(document).ready(function(){
+
+    $("#animateBtn").click(function(){
+
+        $("#box")
+
+        .animate({
+
+            left:"300px",
+
+            width:"250px",
+
+            height:"250px",
+
+            lineHeight:"250px",
+
+            opacity:0.5
+
+        },1000)
+
+        .animate({
+
+            top:"120px",
+
+            borderRadius:"50%",
+
+            opacity:1
+
+        },1000)
+
+        .animate({
+
+            left:"0px",
+
+            top:"0px",
+
+            width:"150px",
+
+            height:"150px",
+
+            lineHeight:"150px",
+
+            borderRadius:"0px"
+
+        },1000);
+
+    });
+
+    $("#resetBtn").click(function(){
+
+        $("#box").stop(true,true);
+
+        $("#box").css({
+
+            left:"0",
+
+            top:"0",
+
+            width:"150px",
+
+            height:"150px",
+
+            lineHeight:"150px",
+
+            opacity:"1",
+
+            borderRadius:"0"
+
+        });
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
