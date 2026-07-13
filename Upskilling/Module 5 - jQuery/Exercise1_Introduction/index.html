@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Exercise 1 - Introduction to jQuery</title>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>Community Event Portal</h1>
+
+<p id="message">
+Welcome to Community Event Portal
+</p>
+
+<button id="btnClick">
+
+Click Me
+
+</button>
+
+<script>
+
+$(document).ready(function(){
+
+    $("#btnClick").click(function(){
+
+        $("#message").text(
+        "Welcome to jQuery Programming!"
+        );
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
