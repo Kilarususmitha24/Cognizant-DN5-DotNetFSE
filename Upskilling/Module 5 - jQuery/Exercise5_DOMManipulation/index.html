@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Exercise 5 - DOM Manipulation</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+
+body{
+    font-family:Arial;
+    margin:30px;
+}
+
+.highlight{
+    background:yellow;
+    color:red;
+    font-weight:bold;
+    padding:8px;
+}
+
+button{
+    margin:5px;
+    padding:8px 15px;
+}
+
+#box{
+    border:2px solid black;
+    padding:15px;
+    margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Community Event Portal</h1>
+
+<div id="box">
+
+<p id="message">
+Welcome to Community Event Portal
+</p>
+
+</div>
+
+<br>
+
+<button id="appendBtn">Append</button>
+
+<button id="prependBtn">Prepend</button>
+
+<button id="beforeBtn">Before</button>
+
+<button id="afterBtn">After</button>
+
+<button id="removeBtn">Remove</button>
+
+<button id="emptyBtn">Empty</button>
+
+<button id="addClassBtn">Add Class</button>
+
+<button id="removeClassBtn">Remove Class</button>
+
+<button id="toggleClassBtn">Toggle Class</button>
+
+<script>
+
+$(document).ready(function(){
+
+    $("#appendBtn").click(function(){
+
+        $("#box").append("<p>New Event Added</p>");
+
+    });
+
+    $("#prependBtn").click(function(){
+
+        $("#box").prepend("<h3>Upcoming Events</h3>");
+
+    });
+
+    $("#beforeBtn").click(function(){
+
+        $("#box").before("<h2>Community Programs</h2>");
+
+    });
+
+    $("#afterBtn").click(function(){
+
+        $("#box").after("<h3>Thank You!</h3>");
+
+    });
+
+    $("#removeBtn").click(function(){
+
+        $("#message").remove();
+
+    });
+
+    $("#emptyBtn").click(function(){
+
+        $("#box").empty();
+
+    });
+
+    $("#addClassBtn").click(function(){
+
+        $("#message").addClass("highlight");
+
+    });
+
+    $("#removeClassBtn").click(function(){
+
+        $("#message").removeClass("highlight");
+
+    });
+
+    $("#toggleClassBtn").click(function(){
+
+        $("#message").toggleClass("highlight");
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
