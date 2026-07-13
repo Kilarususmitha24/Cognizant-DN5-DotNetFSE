@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Exercise 4 - jQuery Methods</title>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+<h1 id="heading">
+Community Event Portal
+</h1>
+
+<p id="description">
+Welcome to the Community Event.
+</p>
+
+<input
+type="text"
+id="username"
+placeholder="Enter Your Name">
+
+<br><br>
+
+<img
+id="eventImage"
+src="https://picsum.photos/300/180"
+alt="Event Image">
+
+<br><br>
+
+<button id="textBtn">text()</button>
+
+<button id="htmlBtn">html()</button>
+
+<button id="valBtn">val()</button>
+
+<button id="attrBtn">attr()</button>
+
+<button id="cssBtn">css()</button>
+
+<button id="appendBtn">append()</button>
+
+<button id="prependBtn">prepend()</button>
+
+<script>
+
+$(document).ready(function(){
+
+    $("#textBtn").click(function(){
+
+        $("#description").text(
+        "Welcome to jQuery Methods."
+        );
+
+    });
+
+    $("#htmlBtn").click(function(){
+
+        $("#description").html(
+        "<b>Registration Open Now!</b>"
+        );
+
+    });
+
+    $("#valBtn").click(function(){
+
+        $("#username").val(
+        "Sai Babu"
+        );
+
+    });
+
+    $("#attrBtn").click(function(){
+
+        $("#eventImage").attr(
+        "src",
+        "https://picsum.photos/301/180"
+        );
+
+    });
+
+    $("#cssBtn").click(function(){
+
+        $("#heading").css({
+            "color":"blue",
+            "background":"lightyellow",
+            "padding":"10px"
+        });
+
+    });
+
+    $("#appendBtn").click(function(){
+
+        $("#description").append(
+        " Enjoy the Event!"
+        );
+
+    });
+
+    $("#prependBtn").click(function(){
+
+        $("#description").prepend(
+        "Hello! "
+        );
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
