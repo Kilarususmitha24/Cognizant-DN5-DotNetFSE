@@ -1,0 +1,22 @@
+.home {
+  text-align: center;
+  padding: 40px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.home p {
+  font-size: 18px;
+}
+
+.home a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+
+  border: 1px solid #555;
+  border-radius: 5px;
+
+  text-decoration: none;
+}
