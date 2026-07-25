@@ -1,0 +1,39 @@
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  margin: 25px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 8px 12px;
+
+  text-decoration: none;
+
+  border-radius: 5px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  font-weight: bold;
+  border: 1px solid #555;
+}
+
+main {
+  margin-top: 30px;
+}
