@@ -1,0 +1,34 @@
+.employee-container {
+  width: 90%;
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 25px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.employee-container > p {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  margin-top: 25px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+}
