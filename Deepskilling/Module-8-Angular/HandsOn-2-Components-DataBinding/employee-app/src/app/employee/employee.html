@@ -1,0 +1,38 @@
+<div class="employee-container">
+
+  <h2>Employee Details</h2>
+
+  <p>
+    <strong>Employee ID:</strong>
+    {{ employeeId }}
+  </p>
+
+  <p>
+    <strong>Name:</strong>
+    {{ employeeName }}
+  </p>
+
+  <p>
+    <strong>Department:</strong>
+    {{ department }}
+  </p>
+
+  <p>
+    <strong>Salary:</strong>
+    {{ salary }}
+  </p>
+
+  <p>
+    <strong>Permanent:</strong>
+    {{ permanent }}
+  </p>
+
+  <button (click)="showMessage()">
+    Show Message
+  </button>
+
+  <p class="message">
+    {{ message }}
+  </p>
+
+</div>
