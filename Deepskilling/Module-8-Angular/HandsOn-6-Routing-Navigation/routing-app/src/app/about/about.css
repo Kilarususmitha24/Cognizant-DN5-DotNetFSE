@@ -1,0 +1,16 @@
+.about {
+  max-width: 700px;
+
+  margin: 30px auto;
+  padding: 30px;
+
+  text-align: center;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+}
