@@ -1,0 +1,28 @@
+.not-found {
+  text-align: center;
+
+  margin: 50px auto;
+  padding: 40px;
+
+  max-width: 600px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.not-found h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.not-found a {
+  display: inline-block;
+
+  margin-top: 20px;
+  padding: 10px 20px;
+
+  text-decoration: none;
+
+  border: 1px solid #555;
+  border-radius: 5px;
+}
