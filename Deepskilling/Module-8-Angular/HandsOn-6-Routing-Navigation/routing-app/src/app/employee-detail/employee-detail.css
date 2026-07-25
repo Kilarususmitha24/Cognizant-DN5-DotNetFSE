@@ -1,0 +1,27 @@
+.details {
+  max-width: 600px;
+
+  margin: 30px auto;
+  padding: 30px;
+
+  text-align: center;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.details p {
+  font-size: 18px;
+}
+
+.details a {
+  display: inline-block;
+
+  margin-top: 20px;
+  padding: 10px 20px;
+
+  text-decoration: none;
+
+  border: 1px solid #555;
+  border-radius: 5px;
+}
