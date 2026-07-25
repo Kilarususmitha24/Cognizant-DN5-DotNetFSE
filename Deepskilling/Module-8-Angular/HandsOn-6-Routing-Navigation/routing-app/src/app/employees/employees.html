@@ -1,0 +1,58 @@
+<div class="employees">
+
+  <h2>Employees</h2>
+
+  <table>
+
+    <thead>
+
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Action</th>
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      @for (employee of employees; track employee.id) {
+
+        <tr>
+
+          <td>
+            {{ employee.id }}
+          </td>
+
+          <td>
+            {{ employee.name }}
+          </td>
+
+          <td>
+            {{ employee.department }}
+          </td>
+
+          <td>
+
+            <a
+              [routerLink]="[
+                '/employees',
+                employee.id
+              ]">
+
+              View Details
+
+            </a>
+
+          </td>
+
+        </tr>
+
+      }
+
+    </tbody>
+
+  </table>
+
+</div>
