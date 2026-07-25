@@ -1,0 +1,29 @@
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container > p {
+  text-align: center;
+}
+
+.forms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+
+  .forms {
+    grid-template-columns: 1fr;
+  }
+
+}
