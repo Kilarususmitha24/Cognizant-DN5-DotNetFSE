@@ -1,0 +1,65 @@
+<div class="container">
+
+  <h1>{{ title | uppercase }}</h1>
+
+  <p>
+    This application demonstrates Angular directives and pipes.
+  </p>
+
+  <button (click)="toggleEmployees()">
+    {{ showEmployees ? 'Hide Employees' : 'Show Employees' }}
+  </button>
+
+  <div *ngIf="showEmployees">
+
+    <h2>Employee List</h2>
+
+    <table>
+
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Salary</th>
+          <th>Joining Date</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr *ngFor="let employee of employees">
+
+          <td>{{ employee.id }}</td>
+
+          <td>
+            {{ employee.name | uppercase }}
+          </td>
+
+          <td>
+            {{ employee.department | lowercase }}
+          </td>
+
+          <td>
+            {{ employee.salary | currency:'INR':'symbol' }}
+          </td>
+
+          <td>
+            {{ employee.joiningDate | date:'dd/MM/yyyy' }}
+          </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <div *ngIf="!showEmployees" class="message">
+
+    <p>Employee list is hidden.</p>
+
+  </div>
+
+</div>
